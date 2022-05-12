@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.function.Consumer;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class T01_ForEach  {
@@ -21,7 +22,7 @@ public class T01_ForEach  {
 //		System.out.println("do loopMapJava8");
 //		T01_ForEach.loopMapJava8();
 //		loopListClassic();
-//		loopListJava8();
+		loopListJava8();
 //		System.out.println("forEachWithConsumerMethod");
 //		forEachWithConsumerMethod();
 //		System.out.println("run saveFilesV1");
@@ -32,7 +33,7 @@ public class T01_ForEach  {
 //		Path path = Paths.get("C:\\Users\\soonyoong.chia\\temp");
 //		t01_ForEach.createDummyFiles().forEach(f -> t01_ForEach.saveFile(path, f));
 //		System.out.println("run forEachParallelNotOrdered");
-	    forEachTestOrder();
+//	    forEachTestOrder();
 //		forEachParallelNotOrdered();
 //		System.out.println("run forEachParallelOrdered");
 //		forEachParallelOrdered();
@@ -99,6 +100,15 @@ public class T01_ForEach  {
 		// to have logic
 		list.stream().filter(s -> s != null).forEach(System.out::println); // or below
 		list.stream().filter(Objects::nonNull).forEach(System.out::println);
+		
+		List<String> list2 = list.stream().filter(s -> s.equals("a")).collect(Collectors.toList());
+		list2.forEach(s -> {
+		    String s2 = s.concat("**");
+		    System.out.println(s);
+		});
+		for (String s: list2) {
+		    System.out.println(s);
+		}
 	}
 
 	public static void forEachWithConsumerMethod() {

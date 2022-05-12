@@ -7,5 +7,9 @@ public class java16Enum {
 		java16Enum java16EnumInstance = new java16Enum();
 		java16EnumInstance.selectedBandMember = Members.JERRY;
 		System.out.println(java16EnumInstance.selectedBandMember);		
+		Members phil = Members.PHIL;
+
+		Members enumMember = Enum.valueOf(Members.class, "PHIL");
+		System.out.println(enumMember);
 	}
 }
