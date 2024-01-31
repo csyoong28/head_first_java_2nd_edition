@@ -1,12 +1,12 @@
 package soonyoong.headfirst.java;
 
 import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+/*import javax.servlet.*;
+import javax.servlet.http.*;*/
 
-public class java15bServlet extends HttpServlet {
+public class java15bServlet/* extends HttpServlet*/ {
 
-	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 		response.setContentType("text/html");
 
@@ -16,5 +16,5 @@ public class java15bServlet extends HttpServlet {
 		out.println("<H1>" + message + "</H1>");
 		out.println("</BODY></HTML>");
 		out.close();
-	}
+	}*/
 }

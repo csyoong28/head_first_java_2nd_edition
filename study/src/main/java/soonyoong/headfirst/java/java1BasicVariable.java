@@ -10,7 +10,7 @@ public class java1BasicVariable {
 
 	public static void main(String[] args) {
 		int x = 24;
-		byte b = x; // can't put larger primitive into smaller primitive
+	//	byte b = x; // can't put larger primitive into smaller primitive
 		byte b1 = (byte) x; // but if cast, then ok
 
 		byte c = 24;
@@ -22,18 +22,18 @@ public class java1BasicVariable {
 		nums[0] = 1;
 		nums[1] = 5;
 		
-		int x =  0;    
+	//	int x =  0;
 		int z = ++x; //end up x=1, z=1
 		
 
-		int x =  0;    
-		int z = x++; //end up x=1, z=0
+	//	int x =  0;
+	//	int z = x++; //end up x=1, z=0
 		
 
 	}
 
 	public void go() {
-		int x;
+		int x = 0;
 		int z = x + 3;		//local variable cannot just declare, must initialize it.
 	}
 }

@@ -1,4 +1,4 @@
-package soonyoong.headfirst.java;
+package com;
 
 public class Box<T> {
     private T t;

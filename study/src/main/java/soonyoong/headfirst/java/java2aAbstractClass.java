@@ -18,7 +18,7 @@ public class java2aAbstractClass {
 	}
 	
 	public static void main(String[] args) {
-		java2aAbstractClass aa = new java2aAbstractClass();		//abstract class can have constructor, but can't be instantiated by "new"
+	//	java2aAbstractClass aa = new java2aAbstractClass();		//abstract class can have constructor, but can't be instantiated by "new"
 		
 	}
 }

@@ -12,17 +12,17 @@ public class java13dDataStructureGenericArrayList {
 	
 	
 	public void go() {
-		ArrayList<Animal> animals = new ArrayList<Animal>();
-		animals.add(new Dog());
-		animals.add(new Cat());
-		animals.add(new Dog());
-		takeAnimals(animals);
-
-		ArrayList<Dog> dogs = new ArrayList<Dog>();
-		dogs.add(new Dog());
-		dogs.add(new Dog());
-		takeAnimals(dogs);
-		injectAnimals(dogs);
+//		ArrayList<Animal> animals = new ArrayList<Animal>();
+//		animals.add(new Dog());
+//		animals.add(new Cat());
+//		animals.add(new Dog());
+//		takeAnimals(animals);
+//
+//		ArrayList<Dog> dogs = new ArrayList<Dog>();
+//		dogs.add(new Dog());
+//		dogs.add(new Dog());
+//		takeAnimals(dogs);
+//		injectAnimals(dogs);
 	}
 
 	public void takeAnimals(ArrayList<Animal> animals) {
@@ -32,10 +32,10 @@ public class java13dDataStructureGenericArrayList {
 	}
 	
 	public void injectAnimals(ArrayList<? extends Animal> animals) {
-		animals.add(new Dog());			//having the ? wildcard, will not allow to add to the collection
+		//animals.add(new Dog());			//having the ? wildcard, will not allow to add to the collection
 	}
 	
 	public <T extends Animal>void injectAnimals2(ArrayList<T> animals) {
-		animals.add(new Dog());			//this declaration is same with ? wildcard version
+		//animals.add(new Dog());			//this declaration is same with ? wildcard version
 	}
 }

@@ -11,8 +11,8 @@ public class java13cDataStructureGenericArray {
 	}
 
 	public void go() {
-		Animal[] animals = { new Dog(), new Cat(), new Dog() };
-		Dog[] dogs = { new Dog(), new Dog(), new Dog() };
+		Animal[] animals = { new Dog2(), new Cat(), new Dog2() };
+		Dog2[] dogs = { new Dog2(), new Dog2(), new Dog2() };
 		takeAnimals(animals);
 		takeAnimals(dogs);
 	}
@@ -28,7 +28,7 @@ public class java13cDataStructureGenericArray {
 	}
 	
 	public void create() {		//pass compile, but fail at runtime
-		   ArrayList<Dog> dogs1 = new ArrayList<Animal>();
-		   ArrayList<Dog> dogs2 = new ArrayList<Dog>();
+//		   ArrayList<Dog2> dogs1 = new ArrayList<Animal>();
+//		   ArrayList<Dog2> dogs2 = new ArrayList<Dog>();
 	}
 }

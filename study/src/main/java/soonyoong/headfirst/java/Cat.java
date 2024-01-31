@@ -1,8 +1,10 @@
 package soonyoong.headfirst.java;
 
 public class Cat extends Animal {
+
+	String sound = "cat sound";
 	public void eat() {
-		System.out.println("meow, thanks and eat");
+		System.out.println("meow, thanks and eat make " +  sound);
 	}
 	
 	public void bark() {

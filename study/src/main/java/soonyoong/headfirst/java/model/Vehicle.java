@@ -12,6 +12,10 @@ public abstract class Vehicle {
         this.brand = brand;
     }
 
+    public Vehicle() {
+        super();
+    }
+
     public void move() {
         this.makeNoise();
         System.out.println("vehicle move");

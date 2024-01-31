@@ -19,7 +19,7 @@ public class java17gLambdaThisReference {
 		//when in lambda
 		thisObject.doProcess(10, (i) -> {
 			System.out.println("value of i is " + i);
-			System.out.println(this.getClass() + "," + this);		//this reference, is same as it is outside the lambda, thus in this 
+		//	System.out.println(this.getClass() + "," + this);		//this reference, is same as it is outside the lambda, thus in this
 			//example is incorrect because is in the main method
 		});
 	}

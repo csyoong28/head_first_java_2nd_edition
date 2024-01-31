@@ -6,6 +6,10 @@ public class Car extends Vehicle {
         super(color, brand);
     }
 
+    public Car() {
+        super();
+    }
+
     @Override
     protected void makeNoise() {
         System.out.println("car beep beep");
